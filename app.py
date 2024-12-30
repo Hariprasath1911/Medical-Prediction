@@ -5,7 +5,7 @@ import pandas as pd
 page_bg_img = '''
 <style>
 body {
-background-image: url("C:/Users/DINESH/Desktop/Data for DS/vscode/project/12.png");
+background-image: url("https://raw.githubusercontent.com/Hariprasath1911/Medical-Prediction/main/12.png");
 background-size: cover;
 }
 </style>
