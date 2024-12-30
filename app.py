@@ -21,7 +21,7 @@ def load_model(model_path):
 
 # Load models
 Kidney_model=load_model("C:/Users/DINESH/Desktop/Data for DS/vscode/project/kidney.pkl")
-liver_model = load_model('C:/Users/DINESH/Desktop/Data for DS/vscode/project/model_liver.pkl')
+liver_model = load_model('https://github.com/Hariprasath1911/Medical-Prediction/blob/main/model_liver.pkl')
 parkinson_model = load_model('C:/Users/DINESH\Desktop/Data for DS/vscode/project/parkinson.pkl')
 
 # App title
