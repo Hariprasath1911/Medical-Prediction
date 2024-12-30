@@ -5,7 +5,7 @@ import pandas as pd
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://raw.githubusercontent.com/Hariprasath1911/Medical-Prediction/main/12.png");
+background-image: url("12.png");
 background-size: cover;
 }
 </style>
@@ -20,9 +20,9 @@ def load_model(model_path):
         return pickle.load(file)
 
 # Load models
-Kidney_model=load_model("https://github.com/Hariprasath1911/Medical-Prediction/blob/main/kidney.pkl")
-liver_model = load_model('https://github.com/Hariprasath1911/Medical-Prediction/blob/main/model_liver.pkl')
-parkinson_model = load_model('https://github.com/Hariprasath1911/Medical-Prediction/blob/main/parkinson.pkl')
+Kidney_model=load_model("kidney.pkl")
+liver_model = load_model("model_liver.pkl")
+parkinson_model = load_model("parkinson.pkl")
 
 # App title
 st.title('Medical Condition Prediction App')
