@@ -2,7 +2,16 @@ import streamlit as st
 import pickle
 import pandas as pd
 
+page_bg_img = '''
+<style>
+body {
+background-image: url("12.png");
+background-size: cover;
+}
+</style>
+'''
 
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Load models
 def load_model(model_path):
