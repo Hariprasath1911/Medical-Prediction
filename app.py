@@ -20,7 +20,7 @@ def load_model(model_path):
         return pickle.load(file)
 
 # Load models
-Kidney_model=load_model("C:/Users/DINESH/Desktop/Data for DS/vscode/project/kidney.pkl")
+Kidney_model=load_model("https://github.com/Hariprasath1911/Medical-Prediction/blob/main/kidney.pkl")
 liver_model = load_model('https://github.com/Hariprasath1911/Medical-Prediction/blob/main/model_liver.pkl')
 parkinson_model = load_model('C:/Users/DINESH\Desktop/Data for DS/vscode/project/parkinson.pkl')
 
