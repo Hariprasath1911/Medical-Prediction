@@ -22,7 +22,7 @@ def load_model(model_path):
 # Load models
 Kidney_model=load_model("https://github.com/Hariprasath1911/Medical-Prediction/blob/main/kidney.pkl")
 liver_model = load_model('https://github.com/Hariprasath1911/Medical-Prediction/blob/main/model_liver.pkl')
-parkinson_model = load_model('C:/Users/DINESH\Desktop/Data for DS/vscode/project/parkinson.pkl')
+parkinson_model = load_model('https://github.com/Hariprasath1911/Medical-Prediction/blob/main/parkinson.pkl')
 
 # App title
 st.title('Medical Condition Prediction App')
