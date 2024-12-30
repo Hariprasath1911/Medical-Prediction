@@ -14,7 +14,6 @@ background-size: cover;
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Load models
-@st.cache_resource
 def load_model(model_path):
     with open(model_path, 'rb') as file:
         return pickle.load(file)
