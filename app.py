@@ -159,7 +159,7 @@ if condition == 'Kidney Disease':
 
 elif condition == 'Liver Disease':
     st.header('Liver Disease Prediction')
-    tab1,tab2=st.stabs(["Home", "Predict"])
+    tab1,tab2=st.tabs(["Home", "Predict"])
     with tab1:
         st.markdown("""
         **Liver Disease**
@@ -211,7 +211,7 @@ elif condition == 'Liver Disease':
 
 elif condition == 'Parkinson Disease':
     st.header('Parkinson Disease Prediction')
-    tab1,tab2=st.stabs(["Home", "Predict"])
+    tab1,tab2=st.tabs(["Home", "Predict"])
     with tab1:
         st.markdown("""
         **Parkinson’s Disease**
