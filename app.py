@@ -12,6 +12,7 @@ background-size: cover;
 '''
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
+@st.cache_resource
 
 # Load models
 def load_model(model_path):
@@ -19,7 +20,6 @@ def load_model(model_path):
         return pickle.load(file)
 
 # Load models
-@st.cache_resource
 Kidney_model = load_model("kidney.pkl")
 liver_model = load_model("model_liver.pkl")
 parkinson_model = load_model("parkinson.pkl")
