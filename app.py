@@ -29,7 +29,44 @@ st.title('Medical Condition Prediction App')
 st.sidebar.write('Select parameters and click Predict to see the results.')
 
 # Sidebar for condition selection
-condition = st.sidebar.selectbox('Select Medical Condition', ['Kidney Disease','Liver Disease', 'Parkinson Disease'])
+condition = st.sidebar.selectbox('Select Medical Condition', ['Home','Kidney Disease','Liver Disease', 'Parkinson Disease'])
+if condition == 'Home':
+    st.title("Health Prediction Application")
+    st.subheader("Empowering Early Detection of Health Conditions")
+
+# Introduction
+    st.write("""
+    Welcome to the **Health Prediction Application**! This tool is designed to provide insights and early detection of health conditions using machine learning models. 
+    Simply input relevant medical data or upload patient records, and our models will predict the likelihood of specific health issues.
+    """)
+
+# Application features
+    st.markdown("### Features:")
+    st.write("""
+    - **Liver Disease Prediction**: Analyze patient data to determine the likelihood of liver-related health issues.
+    - **Kidney Disease Prediction**: Use medical test results to assess the risk of chronic kidney disease.
+    - **Parkinson’s Disease Prediction**: Evaluate vocal and motor features to predict the presence of Parkinson’s disease.
+    - **Interactive Visualizations**: Gain insights into medical data through dynamic charts and graphs.
+    - **Batch Predictions**: Upload datasets for large-scale health predictions.
+    """)
+
+# Navigation instructions
+    st.markdown("### How to Use:")
+    st.write("""
+    1. Navigate to the specific health condition page using the tabs on the sidebar.
+    2. Input the required medical data or upload a dataset.
+    3. View the prediction results instantly, along with additional insights and visualizations.
+    """)
+
+# Add a call-to-action
+    st.markdown("""
+    #### Ready to get started? 
+    Select a prediction model from the sidebar or explore the example datasets to see the application in action!
+    """)
+
+# Footer or credits
+    st.info("Note: This application is intended for informational purposes only and should not be used as a substitute for professional medical advice.")
+
 
 if condition == 'Kidney Disease':
     st.header('Kidney Disease Prediction')
