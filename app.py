@@ -133,33 +133,61 @@ elif condition == 'Liver Disease':
 
 elif condition == 'Parkinson Disease':
     st.header('Parkinson Disease Prediction')
-    c1,c2=st.columns(2)
+    c1,c2,c3=st.columns(3)
+    c4,c5,c6=st.columns(3)
+    c7,c8,c9=st.columns(3)
+    c10,c11,c12=st.columns(3)
+    c13,c14,c15=st.columns(3)
+    c16,c17,c18=st.columns(3)
+    c19,c20=st.columns(2)
+    c21,c22=st.columns(2)
+    
     
     # User input
     with c1:
         Fo = st.number_input('Enter average fundamental frequency of the voice (Fo-Hz)')
     with c2:
         Fhi = st.number_input('Enter maximum fundamental frequency of the voice')
-    Flo = st.number_input('Enter minimum fundamental frequency of the voice')
-    Jitter= st.number_input('Entter measure of variation in pitch (percentage)')
-    Jitter_Abs=st.number_input('Enter absolute measure of pitch variation')
-    RAP=st.number_input('Enter relative average perturbation (measure of voice signal frequency variation)')
-    PPQ=st.number_input('Enter five-point period perturbation quotient')
-    Jitter_DDP=st.number_input('Enter average absolute difference of differences between cycles')
-    MDVP_Shimmer=st.number_input('Enter measure of amplitude variation')
-    MDVP_Shimmer_dB=st.number_input('Enter amplitude variation measured in decibels')
-    Shimmer_APQ3=st.number_input('Enter three-point amplitude perturbation quotient')
-    Shimmer_APQ5=st.number_input('Enter five-point amplitude perturbation quotient')
-    APQ=st.number_input('Enter amplitude perturbation quotient')
-    Shimmer_DDA=st.number_input('Enter average absolute differences between consecutive amplitudes')
-    NHR=st.number_input('Enter noise-to-harmonics ratio (an indicator of noise in the voice)')
-    HNR=st.number_input('Enter harmonics-to-noise ratio (an indicator of tonal clarity in the voice)')
-    RPDE=st.number_input('ENter recurrence period density entropy (nonlinear dynamical complexity measure)')
-    DFA=st.number_input('Enter detrended fluctuation analysis (signal fractal scaling exponent)')
-    spread1=st.number_input('Enter nonlinear measure of voice signal frequency')
-    spread2=st.number_input('Enter nonlinear measure of voice signal amplitude')
-    D2=st.number_input('Enter dynamical complexity measure')
-    PPE=st.number_input('Enter pitch period entropy (variation in pitch)')      
+    with c3:
+        Flo = st.number_input('Enter minimum fundamental frequency of the voice')
+    with c4:
+        Jitter= st.number_input('Entter measure of variation in pitch (percentage)')
+    with c5:
+        Jitter_Abs=st.number_input('Enter absolute measure of pitch variation')
+    with c6:
+        RAP=st.number_input('Enter relative average perturbation (measure of voice signal frequency variation)')
+    with c7:
+        PPQ=st.number_input('Enter five-point period perturbation quotient')
+    with c8:
+        Jitter_DDP=st.number_input('Enter average absolute difference of differences between cycles')
+    with c9:
+        MDVP_Shimmer=st.number_input('Enter measure of amplitude variation')
+    with c10:
+        MDVP_Shimmer_dB=st.number_input('Enter amplitude variation measured in decibels')
+    with c11:
+        Shimmer_APQ3=st.number_input('Enter three-point amplitude perturbation quotient')
+    with c12:
+        Shimmer_APQ5=st.number_input('Enter five-point amplitude perturbation quotient')
+    with c13:
+        APQ=st.number_input('Enter amplitude perturbation quotient')
+    with c14:
+        Shimmer_DDA=st.number_input('Enter average absolute differences between consecutive amplitudes')
+    with c15:
+        NHR=st.number_input('Enter noise-to-harmonics ratio (an indicator of noise in the voice)')
+    with c16:
+        HNR=st.number_input('Enter harmonics-to-noise ratio (an indicator of tonal clarity in the voice)')
+    with c17:
+        RPDE=st.number_input('ENter recurrence period density entropy (nonlinear dynamical complexity measure)')
+    with c18:
+        DFA=st.number_input('Enter detrended fluctuation analysis (signal fractal scaling exponent)')
+    with c19:
+        spread1=st.number_input('Enter nonlinear measure of voice signal frequency')
+    with c20:
+        spread2=st.number_input('Enter nonlinear measure of voice signal amplitude')
+    with c21:
+        D2=st.number_input('Enter dynamical complexity measure')
+    with c22:
+        PPE=st.number_input('Enter pitch period entropy (variation in pitch)')      
     
     if st.button('Predict'):
         #data={
