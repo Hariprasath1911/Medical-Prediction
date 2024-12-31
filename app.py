@@ -25,7 +25,6 @@ liver_model = load_model("model_liver.pkl")
 parkinson_model = load_model("parkinson.pkl")
 
 # App title
-st.title('Medical Condition Prediction App')
 st.sidebar.write('Select parameters and click Predict to see the results.')
 
 # Sidebar for condition selection
@@ -46,8 +45,7 @@ if condition == 'Home':
     - **Liver Disease Prediction**: Analyze patient data to determine the likelihood of liver-related health issues.
     - **Kidney Disease Prediction**: Use medical test results to assess the risk of chronic kidney disease.
     - **Parkinson’s Disease Prediction**: Evaluate vocal and motor features to predict the presence of Parkinson’s disease.
-    - **Interactive Visualizations**: Gain insights into medical data through dynamic charts and graphs.
-    - **Batch Predictions**: Upload datasets for large-scale health predictions.
+
     """)
 
 # Navigation instructions
@@ -61,7 +59,7 @@ if condition == 'Home':
 # Add a call-to-action
     st.markdown("""
     #### Ready to get started? 
-    Select a prediction model from the sidebar or explore the example datasets to see the application in action!
+    Select a prediction model from the sidebar to see the application in action!
     """)
 
 # Footer or credits
