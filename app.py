@@ -92,20 +92,30 @@ if condition == 'Kidney Disease':
 
 elif condition == 'Liver Disease':
     st.header('Liver Disease Prediction')
-    
+    col1,col2,col3,col4,col5,col6,col7,col8,col9,col10=st.columns(10)
     # User input
-    age = st.number_input('Age', min_value=12)
-    gender_select = st.selectbox('Gender', ['Male', 'Female'])
-    gender_map={'Male':1, 'Female':0}
-    gender=gender_map.get(gender_select)
-    bilirubin = st.number_input('Total Bilirubin',min_value=0)
-    Direct_Bilirubin=st.number_input('Direct_Bilirubin',min_value=0)
-    alkaline_phosphotase = st.number_input('Alkaline Phosphotase',min_value=0)
-    Alamine_Aminotransferase= st.number_input('Alamine_Aminotransferase',min_value=0)
-    Aspartate_Aminotransferase=st.number_input('Aspartate_Aminotransferase',min_value=0)
-    Total_Protiens=st.number_input('Total_Protiens',min_value=0)
-    albumin = st.number_input('Albumin',min_value=0)
-    Albumin_and_Globulin_Ratio=st.number_input('Albumin_and_Globulin_Ratio',min_value=0)
+    with col1:
+        age = st.number_input('Age', min_value=12)
+    with col2:
+        gender_select = st.selectbox('Gender', ['Male', 'Female'])
+        gender_map={'Male':1, 'Female':0}
+        gender=gender_map.get(gender_select)
+    with col3:
+        bilirubin = st.number_input('Total Bilirubin',min_value=0)
+    with col4:
+        Direct_Bilirubin=st.number_input('Direct_Bilirubin',min_value=0)
+    with col5:
+        alkaline_phosphotase = st.number_input('Alkaline Phosphotase',min_value=0)
+    with col6:
+        Alamine_Aminotransferase= st.number_input('Alamine_Aminotransferase',min_value=0)
+    with col7:
+        Aspartate_Aminotransferase=st.number_input('Aspartate_Aminotransferase',min_value=0)
+    with col8:
+        Total_Protiens=st.number_input('Total_Protiens',min_value=0)
+    with col9:
+        albumin = st.number_input('Albumin',min_value=0)
+    with col10:
+        Albumin_and_Globulin_Ratio=st.number_input('Albumin_and_Globulin_Ratio',min_value=0)
     
     if st.button('Predict'):
         data={
