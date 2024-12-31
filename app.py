@@ -133,10 +133,13 @@ elif condition == 'Liver Disease':
 
 elif condition == 'Parkinson Disease':
     st.header('Parkinson Disease Prediction')
+    c1,c2=st.columns(2)
     
     # User input
-    Fo = st.number_input('Enter average fundamental frequency of the voice (Fo-Hz)')
-    Fhi = st.number_input('Enter maximum fundamental frequency of the voice')
+    with c1:
+        Fo = st.number_input('Enter average fundamental frequency of the voice (Fo-Hz)')
+    with c2:
+        Fhi = st.number_input('Enter maximum fundamental frequency of the voice')
     Flo = st.number_input('Enter minimum fundamental frequency of the voice')
     Jitter= st.number_input('Entter measure of variation in pitch (percentage)')
     Jitter_Abs=st.number_input('Enter absolute measure of pitch variation')
