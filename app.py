@@ -138,8 +138,8 @@ elif condition == 'Parkinson Disease':
     c7,c8,c9=st.columns(3)
     c10,c11,c12=st.columns(3)
     c13,c14,c15=st.columns(3)
-    c16,c17=st.columns(3)
-    c18,c19,c20=st.columns(2)
+    c16,c17=st.columns(2)
+    c18,c19,c20=st.columns(3)
     c21,c22=st.columns(2)
     
     
