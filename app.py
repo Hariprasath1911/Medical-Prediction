@@ -33,52 +33,83 @@ condition = st.sidebar.selectbox('Select Medical Condition', ['Kidney Disease','
 
 if condition == 'Kidney Disease':
     st.header('Kidney Disease Prediction')
-    
+    a1,a2,a3=st.columns(3)
+    a4,a5,a6=st.columns(3)
+    a7,a8,a9=st.columns(3)
+    a10,a11,a12=st.columns(3)
+    a13,a14,a15=st.columns(3)
+    a16,a17,a18=st.columns(3)
+    a19,a20,a21=st.columns(3)
+    a22,a23,a24=st.columns(3)
     # User input
-    age = st.number_input('Enter your age', min_value=12)
-    bp = st.number_input('Enter blood pressure (in mmHg)',min_value=0)
-    sg = st.number_input('Enter specific gravity of urine',min_value=0)
-    al= st.number_input('Enter albumin levels in urine',min_value=0)
-    su=st.number_input('Enter sugar levels in urine',min_value=0)
-    rbc_select=st.selectbox('Select Red blood cells-status',['Normal','Abnormal'])
-    rbc_map={'Normal':1,'Abnormal':0}
-    rbc=rbc_map.get(rbc_select)
-    pc_select=st.selectbox('Select pus cell count-status',['Normal','Abnormal'])
-    pc_map={'Normal':1,'Abnormal':0}
-    pc=pc_map.get(pc_select)
-    pcc_select=st.selectbox('Select pus cell clumps-status',['Not present','Present'])
-    pcc_map={'Present':1,'Not present':0}
-    pcc=pcc_map.get(pcc_select)
-    ba_select=st.selectbox('Select bacteria presence-status',['Not present','Present'])
-    ba_map={'Present':1,'Not present':0}
-    ba=ba_map.get(ba_select)
-    bgr= st.number_input('Enter blood glucose random levels',min_value=0)
-    bu= st.number_input('Enter blood urea levels',min_value=0)
-    sc= st.number_input('Enter serum creatinine levels',min_value=0)
-    sod= st.number_input('Enter sodium levels',min_value=0)
-    pot= st.number_input('Enter potassium levels',min_value=0)
-    hemo= st.number_input('Enter hemoglobin levels',min_value=0)
-    pcv= st.number_input('Enter packed cell volume',min_value=0)
-    wc= st.number_input('Enter white blood cell count',min_value=0)
-    rc= st.number_input('Enter Red blood cell count.',min_value=0)
-    htn_select=st.selectbox('Select hypertension-status',['No','Yes'])
-    htn_map={'Yes':1,'No':0}
-    htn=htn_map.get(htn_select)
-    dm_select=st.selectbox('Select diabetes mellitus-status',['No','Yes'])
-    dm_map={'Yes':1,'No':0}
-    dm=dm_map.get(dm_select)
-    cad_select=st.selectbox('Select coronary artery disease-status',['No','Yes'])
-    cad_map={'Yes':1,'No':0}
-    cad=cad_map.get(cad_select)
-    appet_select=st.selectbox('Select appetite-status',['Good','Poor'])
-    appet_map={'Poor':1,'Good':0}
-    appet=appet_map.get(appet_select)
-    pe_select=st.selectbox('Select pedal edema-status',['No','Yes'])
-    pe_map={'Yes':1,'No':0}
-    pe=pe_map.get(pe_select)
-    ane_select=st.selectbox('Select anemia-status',['No','Yes'])
-    ane_map={'Yes':1,'No':0}
-    ane=ane_map.get(ane_select)
+    with a1:
+        age = st.number_input('Enter your age', min_value=12)
+    with a2:
+        bp = st.number_input('Enter blood pressure (in mmHg)',min_value=0)
+    with a3:
+        sg = st.number_input('Enter specific gravity of urine',min_value=0)
+    with a4:
+        al= st.number_input('Enter albumin levels in urine',min_value=0)
+    with a5:
+        su=st.number_input('Enter sugar levels in urine',min_value=0)
+    with a6:
+        rbc_select=st.selectbox('Select Red blood cells-status',['Normal','Abnormal'])
+        rbc_map={'Normal':1,'Abnormal':0}
+        rbc=rbc_map.get(rbc_select)
+    with a7:
+        pc_select=st.selectbox('Select pus cell count-status',['Normal','Abnormal'])
+        pc_map={'Normal':1,'Abnormal':0}
+        pc=pc_map.get(pc_select)
+    with a8:
+        pcc_select=st.selectbox('Select pus cell clumps-status',['Not present','Present'])
+        pcc_map={'Present':1,'Not present':0}
+        pcc=pcc_map.get(pcc_select)
+    with a9:
+        ba_select=st.selectbox('Select bacteria presence-status',['Not present','Present'])
+        ba_map={'Present':1,'Not present':0}
+        ba=ba_map.get(ba_select)
+    with a10:
+        bgr= st.number_input('Enter blood glucose random levels',min_value=0)
+    with a11:
+        bu= st.number_input('Enter blood urea levels',min_value=0)
+    with a12:
+        sc= st.number_input('Enter serum creatinine levels',min_value=0)
+    with a13:
+        sod= st.number_input('Enter sodium levels',min_value=0)
+    with a14:
+        pot= st.number_input('Enter potassium levels',min_value=0)
+    with a15:
+        hemo= st.number_input('Enter hemoglobin levels',min_value=0)
+    with a16:
+        pcv= st.number_input('Enter packed cell volume',min_value=0)
+    with a17:
+        wc= st.number_input('Enter white blood cell count',min_value=0)
+    with a18:
+        rc= st.number_input('Enter Red blood cell count.',min_value=0)
+    with a19:
+        htn_select=st.selectbox('Select hypertension-status',['No','Yes'])
+        htn_map={'Yes':1,'No':0}
+        htn=htn_map.get(htn_select)
+    with a20:
+        dm_select=st.selectbox('Select diabetes mellitus-status',['No','Yes'])
+        dm_map={'Yes':1,'No':0}
+        dm=dm_map.get(dm_select)
+    with a21:
+        cad_select=st.selectbox('Select coronary artery disease-status',['No','Yes'])
+        cad_map={'Yes':1,'No':0}
+        cad=cad_map.get(cad_select)
+    with a22:
+        appet_select=st.selectbox('Select appetite-status',['Good','Poor'])
+        appet_map={'Poor':1,'Good':0}
+        appet=appet_map.get(appet_select)
+    with a23:
+        pe_select=st.selectbox('Select pedal edema-status',['No','Yes'])
+        pe_map={'Yes':1,'No':0}
+        pe=pe_map.get(pe_select)
+    with a24:
+        ane_select=st.selectbox('Select anemia-status',['No','Yes'])
+        ane_map={'Yes':1,'No':0}
+        ane=ane_map.get(ane_select)
 
     
     if st.button('Predict'):
