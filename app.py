@@ -93,9 +93,9 @@ if condition == 'Kidney Disease':
 elif condition == 'Liver Disease':
     st.header('Liver Disease Prediction')
     col1,col2,col3 = st.columns(3)
-    col4,col5,col6 = st.columns(3)
-    col7,col8,col9 = st.columns(3)
-    col10 = st.columns()
+    col4,col5,col6,col7 = st.columns(3)
+    col8,col9,col10 = st.columns(3)
+    
     # User input
     with col1:
         age = st.number_input('Age', min_value=12)
