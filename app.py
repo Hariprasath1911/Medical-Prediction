@@ -62,7 +62,7 @@ if condition == 'Kidney Disease':
     with tab1:
         st.markdown("""
         **Kidney Disease**
-        Kidney disease, also known as renal disease, occurs when the kidneys lose their ability to filter waste
+        , also known as renal disease, occurs when the kidneys lose their ability to filter waste
         and excess fluids from the blood. This condition can lead to chronic kidney disease (CKD), which may
         progress over time to kidney failure. Common causes include diabetes, high blood pressure, and
         infections. Early detection through tests like blood pressure, creatinine levels, and urine analysis is
@@ -163,7 +163,7 @@ elif condition == 'Liver Disease':
     with tab1:
         st.markdown("""
         **Liver Disease**
-        Liver disease encompasses a range of conditions that affect the liver's ability to function properly,
+        encompasses a range of conditions that affect the liver's ability to function properly,
         including hepatitis, cirrhosis, and fatty liver disease. The liver plays a vital role in detoxification,
         metabolism, and digestion. Symptoms of liver disease include jaundice, fatigue, and abdominal pain.
         Early diagnosis using tests such as bilirubin levels, enzyme measurements, and imaging is essential to
@@ -215,7 +215,7 @@ elif condition == 'Parkinson Disease':
     with tab1:
         st.markdown("""
         **Parkinson’s Disease**
-        Parkinson’s disease is a progressive neurological disorder that affects movement and coordination. It
+        is a progressive neurological disorder that affects movement and coordination. It
         is caused by the degeneration of dopamine-producing neurons in the brain. Symptoms include
         tremors, stiffness, slow movements, and balance issues. Although there is no cure, early diagnosis
         and treatments like medication, physical therapy, and lifestyle adjustments can help manage
