@@ -19,6 +19,7 @@ def load_model(model_path):
         return pickle.load(file)
 
 # Load models
+@st.cache_resource
 Kidney_model = load_model("kidney.pkl")
 liver_model = load_model("model_liver.pkl")
 parkinson_model = load_model("parkinson.pkl")
