@@ -21,7 +21,6 @@ def set_background_image_local(image_path):
             background-position: fit;
             background-repeat: repeat;
             background-attachment: fixed;
-            opacity: 0.7;
         }}     
         </style>
         """,
