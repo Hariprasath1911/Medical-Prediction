@@ -21,8 +21,12 @@ def set_background_image_local(image_path):
             background-position: fit;
             background-repeat: repeat;
             background-attachment: fixed;
-            opacity: 0.9;
+            
         }}
+        .background-overlay {{
+            opacity: 0.3;
+        }}
+        
         </style>
         """,
         unsafe_allow_html=True
