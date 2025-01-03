@@ -180,7 +180,7 @@ if condition == 'Kidney Disease':
 
 elif condition == 'Liver Disease':
     st.header('Liver Disease Prediction')
-    set_background_image_local(r"LIVER.png")
+    set_background_image_local(r"LIVER.jpg")
     tab1,tab2=st.tabs(["Home", "Predict"])
     with tab1:
         st.markdown("""
@@ -233,6 +233,7 @@ elif condition == 'Liver Disease':
 
 elif condition == 'Parkinson Disease':
     st.header('Parkinson Disease Prediction')
+    set_background_image_local(r"par.png")
     tab1,tab2=st.tabs(["Home", "Predict"])
     with tab1:
         st.markdown("""
