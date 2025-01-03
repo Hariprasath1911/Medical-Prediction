@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import pandas as pd
-
+import base64
 
 @st.cache_resource
 # Load models
