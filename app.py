@@ -78,7 +78,7 @@ if condition == 'Home':
 
 if condition == 'Kidney Disease':
     st.header('Kidney Disease Prediction')
-    set_background_image_local(r"kid.jpeg")
+    set_background_image_local(r"kid.jpg")
     tab1, tab2 = st.tabs(["Home", "Predict"])
     with tab1:
         st.markdown("""
