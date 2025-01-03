@@ -180,6 +180,7 @@ if condition == 'Kidney Disease':
 
 elif condition == 'Liver Disease':
     st.header('Liver Disease Prediction')
+    set_background_image_local(r"LIVER.png")
     tab1,tab2=st.tabs(["Home", "Predict"])
     with tab1:
         st.markdown("""
