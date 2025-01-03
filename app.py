@@ -15,18 +15,14 @@ def set_background_image_local(image_path):
     st.markdown(
         f"""
         <style>
-        .stApp {{
+        .background-overlay {{
             background-image: url("data:image/png;base64,{base64_image}");
             background-size: cover;
             background-position: fit;
             background-repeat: repeat;
             background-attachment: fixed;
-            
-        }}
-        .background-overlay {{
-            opacity: 0.5;
-        }}
-        
+            opacity: 0.7;
+        }}     
         </style>
         """,
         unsafe_allow_html=True
