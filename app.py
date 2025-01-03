@@ -27,7 +27,7 @@ def set_background_image_local(image_path):
         unsafe_allow_html=True
     )
 
-set_background_image_local(r"12.jpeg")
+set_background_image_local(r"12.png")
 
 # Load models
 Kidney_model = load_model("kidney.pkl")
