@@ -24,7 +24,7 @@ def set_background_image_local(image_path):
             
         }}
         .background-overlay {{
-            opacity: 0.3;
+            opacity: 0.5;
         }}
         
         </style>
