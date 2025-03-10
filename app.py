@@ -306,4 +306,3 @@ elif condition == 'Parkinson Disease':
                                   columns=['MDVP:Fo(Hz)', 'MDVP:Fhi(Hz)','MDVP:Flo(Hz)','MDVP:Jitter(%)','MDVP:Jitter(Abs)','MDVP:RAP','MDVP:PPQ','Jitter:DDP','MDVP:Shimmer','MDVP:Shimmer(dB)','Shimmer:APQ3','Shimmer:APQ5','MDVP:APQ','Shimmer:DDA','NHR','HNR','RPDE','DFA','spread1','spread2','D2','PPE'])
             prediction = parkinson_model.predict(input_data)
             st.markdown(f"**Prediction:** {'✅ Positive - Parkinson Disease' if prediction[0] == 1 else '❌ Negative - Parkinson Disease'}")
-            st.write('Prediction:', 'Positive' if prediction[0] == 1 else 'Negative')
