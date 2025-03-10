@@ -176,7 +176,7 @@ if condition == 'Kidney Disease':
                 }
             input_data = pd.DataFrame([data])
             prediction = Kidney_model.predict(input_data)
-            st.markdown('##Prediction:', 'Positive-Chronic Kidney Disease' if prediction[0] == 1 else 'Negative-Chronic Kidney Disease##')
+            st.markdown(f"**Prediction:** {'✅ Positive - Chronic Kidney Disease' if prediction[0] == 1 else '❌ Negative - Chronic Kidney Disease'}")
 
 elif condition == 'Liver Disease':
     st.header('Liver Disease Prediction')
@@ -229,7 +229,7 @@ elif condition == 'Liver Disease':
                 }
             input_data = pd.DataFrame([data])
             prediction = liver_model.predict(input_data)
-            st.write('Prediction:', 'Positive' if prediction[0] == 1 else 'Negative')
+            st.markdown(f"**Prediction:** {'✅ Positive - Liver Disease' if prediction[0] == 1 else '❌ Negative - Liver Disease'}")
 
 elif condition == 'Parkinson Disease':
     st.header('Parkinson Disease Prediction')
@@ -305,4 +305,5 @@ elif condition == 'Parkinson Disease':
             input_data = pd.DataFrame([[Fo, Fhi,Flo,Jitter,Jitter_Abs,RAP,PPQ,Jitter_DDP,MDVP_Shimmer,MDVP_Shimmer_dB,Shimmer_APQ3,Shimmer_APQ5,APQ,Shimmer_DDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]],
                                   columns=['MDVP:Fo(Hz)', 'MDVP:Fhi(Hz)','MDVP:Flo(Hz)','MDVP:Jitter(%)','MDVP:Jitter(Abs)','MDVP:RAP','MDVP:PPQ','Jitter:DDP','MDVP:Shimmer','MDVP:Shimmer(dB)','Shimmer:APQ3','Shimmer:APQ5','MDVP:APQ','Shimmer:DDA','NHR','HNR','RPDE','DFA','spread1','spread2','D2','PPE'])
             prediction = parkinson_model.predict(input_data)
+            st.markdown(f"**Prediction:** {'✅ Positive - Parkinson Disease' if prediction[0] == 1 else '❌ Negative - Parkinson Disease'}")
             st.write('Prediction:', 'Positive' if prediction[0] == 1 else 'Negative')
