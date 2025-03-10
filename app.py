@@ -35,10 +35,10 @@ liver_model = load_model("model_liver.pkl")
 parkinson_model = load_model("parkinson.pkl")
 
 # App title
-st.sidebar.write('Select parameters and click Predict to see the results.')
+st.sidebar.write('☰ Navigation')
 
 # Sidebar for condition selection
-condition = st.sidebar.selectbox('Select Medical Condition', ['Home','Kidney Disease','Liver Disease', 'Parkinson Disease'])
+condition = st.sidebar.selectbox('Select Tab 🔍', ['Home','Kidney Disease','Liver Disease', 'Parkinson Disease'])
 if condition == 'Home':
     st.title("Health Prediction Application")
     st.subheader("Empowering Early Detection of Health Conditions")
