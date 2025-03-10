@@ -176,7 +176,7 @@ if condition == 'Kidney Disease':
                 }
             input_data = pd.DataFrame([data])
             prediction = Kidney_model.predict(input_data)
-            st.write('Prediction:', 'Positive-Chronic Kidney Disease' if prediction[0] == 1 else 'Negative-Chronic Kidney Disease')
+            st.snow()('Prediction:', 'Positive-Chronic Kidney Disease' if prediction[0] == 1 else 'Negative-Chronic Kidney Disease')
 
 elif condition == 'Liver Disease':
     st.header('Liver Disease Prediction')
